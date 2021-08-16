@@ -12,8 +12,6 @@ export
 import Base: getindex, size
 abstract type AbstractVariable end
 
-rand(10_000,100_000)
-
 struct Variables  <: AbstractVariable
     name::String
     indexcapacities::Vector{Int}
